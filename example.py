@@ -1,7 +1,7 @@
-def add(a, b):
-	return a + b
+def better_round(a):
+	return round(a)
 
 
-def test_add():
-	assert add(2,3) == 5
-	assert add("sp","s") == "sps"
+def test_better_round():
+	assert better_round(9.5) == 10
+	assert better_round(8.5) == 9
